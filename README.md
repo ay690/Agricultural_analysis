@@ -22,3 +22,7 @@ Also note that this application is completely responsive for all devices.
 # Tech Stacks
 
 React, Javascript, Mantine, Yarn
+
+# Instructions
+
+To start, clone the repository by executing the command: "git clone [https://github.com/ay690/Agricultural_analysis.git]". After cloning, navigate into the repository directory and install dependencies using the command "yarn install". Once the installation is complete, run the code with "yarn start". Ensure to execute these commands in your terminal.
