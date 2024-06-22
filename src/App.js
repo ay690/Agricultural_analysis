@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { MantineProvider } from "@mantine/core";
+import TableByCrop from "./components/TableByCrop";
+import TableByYear from "./components/TableByYear";
+import "@mantine/core/styles.css";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MantineProvider>
+        <div className="App">
+          <h1>Agriculture Analytics</h1>
+          <h2>Table by Year</h2>
+          <TableByYear />
+          <h2>Table by Crop</h2>
+          <TableByCrop />
+        </div>
+      </MantineProvider>
     </div>
   );
 }
